@@ -18,3 +18,30 @@ img{
     
 }
 
+.Energidryck{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.Kaffe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.koffeinpiller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.PWO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
