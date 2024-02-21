@@ -4,14 +4,21 @@ function myFunction() {
 
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
+      let dropdown = document.getElementByClassName("dropdown-content");
+        dropdown.classList.toggle('show')
     }
   }
 
+  function aFunction() {
+    document.getElementById("aDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.adropbtn')) {
+      let dropdown = document.getElementByClassName("adropdown-content");
+       openDropdown.classList.toggle('show')
+
+        }
+      }
+    
+  
