@@ -17,7 +17,6 @@ function myFunction() {
     if (!event.target.matches('.adropbtn')) {
       let dropdown = document.getElementByClassName("adropdown-content");
        openDropdown.classList.toggle('show')
-
         }
       }
     

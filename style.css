@@ -4,8 +4,10 @@ h1{
 
 main{
     display: grid;
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: 2;
+    grid-template-columns: 2fr 2fr;
+    grid-row: 3fr;
+    grid-gap: 30px;
+    margin: 60px;
 }
 
 p{
@@ -13,41 +15,21 @@ p{
 }
 
 img{
-    max-width:200px;
-    max-height: 200px;
+    max-width:150px;
+    max-height: 150px;
     
 }
 
-.Energidryck{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 45px;
+.Energidryck, .Kaffe, .koffeinpiller, .PWO, .Pulver, .Te{
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: 2fr;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.Kaffe{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-}
-
-.koffeinpiller{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
-}
-
-.PWO{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 45px;
-}
-
-
-.dropbtn {
+.dropbtn, .adropbtn {
     background-color: #3498DB;
     color: white;
     padding: 16px;
@@ -56,16 +38,16 @@ img{
     cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus, .adropbtn:hover, .adropbtn:focus{
     background-color: #2980B9;
   }
 
-  .dropdown {
+  .dropdown, .adropdown{
     position: relative;
     display: inline-block;
   }
 
-  .dropdown-content {
+  .dropdown-content, .adropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -74,14 +56,14 @@ img{
     z-index: 1;
   }
 
-  .dropdown-content a {
+  .dropdown-content a, .adropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
 
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover, .adropdown-content a:hover {background-color: #ddd;}
 
   .show {display:block;}
 
@@ -89,46 +71,6 @@ img{
     text-align: center;
     margin-top: 50px;
   }
-
-
-
-  .adropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.adropbtn:hover, .adropbtn:focus {
-    background-color: #2980B9;
-  }
-
-  .adropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .adropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .adropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .adropdown-content a:hover {background-color: #ddd;}
-
-  .show {display:block;}
 
 
 .produkter{
